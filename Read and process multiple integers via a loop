@@ -1,0 +1,19 @@
+Unit 1.2
+Source code
+#include <stdio.h>
+int main(){
+    int qtyRobots, height, weight, enginePower, resistance, sum;
+    qtyRobots = 0;
+    height = 0;
+    weight = 0;
+    enginePower = 0;
+    resistance = 0;
+    sum = 0;
+    scanf("%d", &qtyRobots);
+    for(int i=0; i<qtyRobots; i++){
+        scanf("%d%d%d%d", &height, &weight, &enginePower, &resistance);
+        sum = sum + (enginePower + resistance)*(weight - height);
+    }
+    printf("%d", sum);
+    return 0;
+}
