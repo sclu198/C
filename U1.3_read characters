@@ -11,3 +11,28 @@ int main(){
     printf("%c%c%c%c%c%c%c%c%c\n", sign, sign, sign, sign, sign, sign, sign, sign, sign);
     return 0;
 }
+
+Another method: (using for loop)
+#include <stdio.h>
+int main(void) {
+    char letter;
+    scanf("%c", &letter);
+    printf("++++%c++++\n+++", letter);
+    int i; for (i = 0; i < 3; i++) {
+        printf("%c", letter);
+    }
+    printf("+++\n++");
+    for (i = 0; i < 5; i++) {
+        printf("%c", letter);
+    }
+    printf("++\n+");
+    for (i = 0; i < 7; i++) {
+        printf("%c", letter);
+    }
+    printf("+\n");
+    for (i = 0; i < 9; i++) {
+        printf("%c", letter);
+    }
+
+return (0);
+}
