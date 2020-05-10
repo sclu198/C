@@ -1,0 +1,30 @@
+Unit 1.2
+
+Source code
+#include <stdio.h>
+int main(){
+    int i, num, times;
+    scanf("%d", &num);
+    times = 0;
+    for(i=0; i<11; i++){
+        printf("%dx%d = %d\n", times, num, times*num);
+        times = times + 1;
+    }
+    return 0;
+}
+
+official solution
+#include <stdio.h>
+
+int main() {
+
+    int i, num;
+
+    scanf("%d", &num);
+
+    for (i = 0; i <= 10; i++){
+        printf("%dx%d = %d\n", i, num, i*num);
+    }
+
+    return(0);
+}
