@@ -1,0 +1,13 @@
+Unit 1.3
+source code:
+#include <stdio.h>
+int main(){
+    char sign;
+    scanf("%c", &sign);
+    printf("++++%c++++\n", sign);
+    printf("+++%c%c%c+++\n", sign, sign, sign);
+    printf("++%c%c%c%c%c++\n", sign, sign, sign, sign, sign);
+    printf("+%c%c%c%c%c%c%c+\n", sign, sign, sign, sign, sign, sign, sign);
+    printf("%c%c%c%c%c%c%c%c%c\n", sign, sign, sign, sign, sign, sign, sign, sign, sign);
+    return 0;
+}
