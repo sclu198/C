@@ -1,0 +1,24 @@
+Unit 1.3
+source code
+#include <stdio.h>
+int main(){
+    double demand, nobag;
+    int newnobag;
+    scanf("%lf", &demand);
+    nobag = (demand / 120.0) + 1;
+    newnobag = (int)nobag;
+    printf("%d\n", newnobag*45);
+    return 0;
+}
+
+official code
+#include <stdio.h>
+
+int main(void) {
+	double cement;
+	int bags;
+	scanf("%lf", &cement);
+	bags = cement/120 + 1; //we know that the amount of cement is not a multiple of 120
+	printf("%d", bags*45);
+	return(0);
+}
