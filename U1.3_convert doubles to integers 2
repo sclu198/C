@@ -1,0 +1,28 @@
+Unit 1.3
+source code
+#include <stdio.h>
+int main(){
+    int population, wholepp = 0;
+    double growth;
+    scanf("%d\n%lf", &population, &growth);
+    wholepp = (int)(population * (1+growth*0.01));
+    printf("%d", wholepp);
+
+    return 0;
+}
+
+
+official code
+#include <stdio.h>
+
+int main(void) {
+    int current, futureInt;
+    double growth, futureDoub;
+    
+    scanf("%d", &current);
+    scanf("%lf", &growth);
+    futureDoub = current * (1 + growth / 100);
+    futureInt = (int) futureDoub;
+    printf("%d", futureInt);
+    return(0);
+}
