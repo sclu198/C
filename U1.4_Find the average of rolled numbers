@@ -1,0 +1,49 @@
+U 1.4 Final Project
+source code
+#include <stdio.h>
+int main(){
+    int i = 0;
+    int numof3digits, red, yellow, green, combine; 
+    int sumcombine = 0;
+    double dsumcombine, davg;
+    scanf("%d\n", &numof3digits);
+    
+    for(i=0; i<numof3digits; i++){
+            scanf("%d %d %d\n", &red, &yellow, &green);
+            combine = (red*1) + (yellow*10) + (green*100);
+            sumcombine = sumcombine + combine;
+            dsumcombine = (double)sumcombine;
+            davg = dsumcombine / (i+1);
+            printf("%d. you rolled: %d, current average: %.1lf\n", i+1, combine, davg);
+    }
+    
+    
+    return 0;
+    
+}
+
+official code
+#include <stdio.h>
+
+int main(void) {
+    int N, i, dice, score, sum;
+    double ave;
+    sum = 0;
+    int weight1 = 1;
+    int weight2 = 10;
+    int weight3 = 100;
+    scanf("%d", &N);
+    for (i=0; i<N; i++) {
+        score = 0;
+        scanf("%d", &dice);
+        score += dice*weight1;
+        scanf("%d", &dice);
+        score += dice*weight2;
+        scanf("%d", &dice);
+        score += dice*weight3;
+        sum += score;
+        ave = ((double) sum)/(i+1);
+        printf("%d. you rolled: %d, current average: %.1lf\n", i+1, score, ave);
+    }
+    return 0;
+}
