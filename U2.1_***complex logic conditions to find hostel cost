@@ -10,6 +10,7 @@ Logical symbal
   1 || 0 = 1
   0 || 1 = 1
   0 || 0 = 0
+* NOT -- !
 
 Question:
 The hostel in which you stop for the night changes its prices according to the age of the customer and the weight of their luggage. The rules are not very clear, so you decide to write a small program that will easily allow you and your travel companions to know the price of one night.
