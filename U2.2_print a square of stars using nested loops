@@ -1,0 +1,53 @@
+Unit 2.2
+
+Question:
+Create a program that displays on the screen a square of n x n stars, with the integer n given as an input.
+
+Examples
+Input:
+5
+Output:
+*****
+*****
+*****
+*****
+*****
+ 
+Input:
+3
+Output:
+***
+***
+***
+
+source code:
+#include <stdio.h>
+int main(void){
+    int nbStars = 0;
+    int row = 0;
+    int column = 0;
+    scanf("%d", &nbStars);
+    for(row = 0 ; row < nbStars ; row++){
+        for(column = 0 ; column < nbStars ; column++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+official code:
+#include <stdio.h>
+int main() {
+    int i, j;
+    int n = 0;
+    scanf("%d", &n);
+
+    for(i = 0 ; i < n ; i++){
+        for(j = 0 ; j < n ; j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
