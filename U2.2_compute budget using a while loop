@@ -1,0 +1,66 @@
+Unit 2.2
+
+Question:
+All expenses for the year have been recorded and classified in a multitude of files and the sum of all these expenses must now be calculated.
+But no one knows exactly how many different expenses have been made in the past year!
+Your program will have to read a sequence of positive integers and display their sum.
+We do not know how many integers there will be, but the sequence always ends with the value -1 (which is not an expense, just an end marker).
+
+Example 1
+Input
+1000
+2000
+500
+-1
+Output
+3500
+
+Example 2
+Input
+-1
+Output
+0
+
+Example 3
+Input
+150
+250
+350
+4500
+240
+120
+-1
+Output
+5610
+
+source code:
+#include <stdio.h>
+int main(void){
+    int expenses = 0;
+    int sumExpenses = 0;
+    scanf("%d\n", &expenses);
+    while(expenses != -1){
+        sumExpenses = sumExpenses + expenses;
+        scanf("%d\n", &expenses);
+    }
+    printf("%d", sumExpenses);
+    return 0;
+}
+
+official code:
+#include <stdio.h>
+
+int main()
+{
+    int expense;
+    scanf("%d",&expense);
+    int sumOfExpenses = 0;
+    while (expense != -1)
+    {
+        sumOfExpenses = sumOfExpenses + expense;
+        scanf("%d",&expense);
+    }
+    printf("%d\n",sumOfExpenses);
+
+    return 0;
+}
